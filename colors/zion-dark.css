@@ -1,0 +1,32 @@
+/* view colors */
+@define-color view_text             #ffffff;
+@define-color view_bg_base          #000000;
+@define-color view_bg_alt           #080808;
+@define-color view_border_light     #3a3a3a;
+@define-color view_border_mid       #272727;
+@define-color view_border_dark      #0c0c0c;
+
+/* window colors */
+@define-color window_text           #ffffff;
+@define-color window_bg_base        #101010;
+@define-color window_bg_light       #303030;
+@define-color window_bg_dark        #222222;
+
+/* button colors */
+@define-color button_text           #ffffff;
+@define-color button_bg_base        #404040;
+@define-color button_bg_light       #808080;
+@define-color button_bg_dark        #000000;
+@define-color button_border_light   #cacaca;
+@define-color button_border_mid     #c6c6c6;
+@define-color button_border_dark    #b3b3b3;
+
+/* other colors */
+@define-color selection_text        #ffffff;
+@define-color selection_bg_base     #00316e;
+@define-color link_normal           #80b5ff;
+@define-color link_active           #c0ffff;
+@define-color link_visited          #c080ff;
+@define-color deco_hover            #ffffff;
+@define-color deco_focus            #c0c0c0;
+@define-color deco_shadow           #000000;

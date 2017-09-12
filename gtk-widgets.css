@@ -1,0 +1,21 @@
+window {
+    background-image: linear-gradient(@window_bg_light 0px,
+                                      @window_bg_base 128px,
+                                      @window_bg_dark 256px);
+    color: @window_text;
+}
+
+button {
+    padding: 4px;
+
+    background-image: linear-gradient(@button_bg_light 0%,
+                                      @button_bg_base 50%,
+                                      @button_bg_dark 100%);
+
+    color: @button_text;
+
+    border: 1px solid;
+    border-color: @button_border_light @button_border_mid @button_border_dark;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px @deco_shadow;
+}
