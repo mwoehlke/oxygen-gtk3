@@ -11,6 +11,9 @@
 @define-color window_bg_base        #101010;
 @define-color window_bg_light       #303030;
 @define-color window_bg_dark        #222222;
+@define-color window_border_light   #3a3a3a;
+@define-color window_border_mid     #272727;
+@define-color window_border_dark    #0c0c0c;
 
 /* button colors */
 @define-color button_text           #ffffff;
@@ -24,6 +27,7 @@
 /* other colors */
 @define-color selection_text        #ffffff;
 @define-color selection_bg_base     #00316e;
+@define-color text_negative         #ff80ac;
 @define-color link_normal           #80b5ff;
 @define-color link_active           #c0ffff;
 @define-color link_visited          #c080ff;

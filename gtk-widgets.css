@@ -1,11 +1,29 @@
-window {
+/******************************************************************************
+ Really basic stuff
+******************************************************************************/
+
+* {
+    -GtkTextView-error-underline-color: @text_negative;
+}
+
+/* windows, dialogs */
+.background {
     background-image: linear-gradient(@window_bg_light 0px,
                                       @window_bg_base 128px,
                                       @window_bg_dark 256px);
     color: @window_text;
 }
 
-button {
+/* GTK-rendered window titlebar */
+window headerbar {
+    background-color: @window_bg_light;
+}
+
+/******************************************************************************
+ Buttons
+******************************************************************************/
+
+button:not(:link) {
     padding: 4px;
 
     background-image: linear-gradient(@button_bg_light 0%,
@@ -18,4 +36,46 @@ button {
     border-color: @button_border_light @button_border_mid @button_border_dark;
     border-radius: 4px;
     box-shadow: 0 1px 2px @deco_shadow;
+
+    transition: box-shadow 0.2s;
+}
+
+button:link {
+    padding: 4px;
+    text-decoration: underline; /* doesn't work?? */
+}
+
+button:focus:not(:link) {
+    box-shadow: 0 0 2px     @deco_focus,
+                0 0 2px     @deco_focus,
+                0 0 1px 1px @deco_focus;
+}
+
+button:hover:not(:link) {
+    box-shadow: 0 0 2px     @deco_hover,
+                0 0 2px     @deco_hover,
+                0 0 1px 1px @deco_hover;
+}
+
+button:active:not(:link),
+button:checked:not(:link) {
+    border-color: @window_border_dark @window_border_mid @window_border_light;
+    box-shadow: inset 0 1px 2px @deco_shadow;
+    transition: box-shadow 0s;
+}
+
+/******************************************************************************
+ States (keep at end of file!)
+******************************************************************************/
+*:link {
+    color: @link_normal;
+    text-decoration: underline;
+}
+
+*:visited {
+    color: @link_visited;
+}
+
+*:link:hover {
+    color: @link_active;
 }
