@@ -68,8 +68,39 @@ button:checked:not(:link) {
 }
 
 /******************************************************************************
+ Views
+******************************************************************************/
+
+entry {
+    padding: 4px;
+
+    background-color: @view_bg_base;
+    color: @view_text;
+
+    border: 1px solid;
+    border-color: @window_border_dark @window_border_mid @window_border_light;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px @deco_shadow;
+
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+entry:focus {
+    border-color: @deco_focus;
+    box-shadow: inset 0 0 2px     @deco_focus;
+}
+
+entry:hover {
+    background: red;
+    box-shadow: inset 0 0 2px     @deco_hover,
+                inset 0 0 2px     @deco_hover,
+                inset 0 0 1px 1px @deco_hover;
+}
+
+/******************************************************************************
  States (keep at end of file!)
 ******************************************************************************/
+
 *:link {
     color: @link_normal;
     text-decoration: underline;
