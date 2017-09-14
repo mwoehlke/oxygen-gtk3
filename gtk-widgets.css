@@ -42,7 +42,10 @@ button:not(:link) {
 
 button:link {
     padding: 4px;
-    text-decoration: underline; /* doesn't work?? */
+}
+
+button:link > label {
+    text-decoration: underline;
 }
 
 button:focus:not(:link) {
