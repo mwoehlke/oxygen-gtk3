@@ -24,6 +24,13 @@
 @define-color button_border_mid     #c6c6c6;
 @define-color button_border_dark    #b3b3b3;
 
+/* scrollbar colors */
+@define-color scrollbar_bg_base     #3b3b3b;
+@define-color scrollbar_slider_0    #000000;
+@define-color scrollbar_slider_1    #000000;
+@define-color scrollbar_slider_2    #0e0e0e;
+@define-color scrollbar_slider_3    #161616;
+
 /* menu colors */
 @define-color menu_item_bg_base         #162e4d;
 @define-color menu_item_border_dark     #142945;
