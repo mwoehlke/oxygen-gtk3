@@ -11,9 +11,9 @@
 @define-color window_bg_base        #101010;
 @define-color window_bg_light       #303030;
 @define-color window_bg_dark        #222222;
-@define-color window_border_light   #3a3a3a;
-@define-color window_border_mid     #272727;
-@define-color window_border_dark    #0c0c0c;
+@define-color window_border_light   #4b4b4b;
+@define-color window_border_mid     #3a3a3a;
+@define-color window_border_dark    #222222;
 
 /* button colors */
 @define-color button_text           #ffffff;
@@ -23,6 +23,20 @@
 @define-color button_border_light   #cacaca;
 @define-color button_border_mid     #c6c6c6;
 @define-color button_border_dark    #b3b3b3;
+
+/* menu colors */
+@define-color menu_item_bg_base         #162e4d;
+@define-color menu_item_border_dark     #142945;
+@define-color menu_item_border_mid      #152d4c;
+@define-color menu_item_border_light    #273c55;
+@define-color menu_active_bg_base       #001631;
+@define-color menu_active_border_dark   #001630;
+@define-color menu_active_border_mid    #001834;
+@define-color menu_active_border_light  #122946;
+@define-color menu_hover_bg_base        #1a1a1a;
+@define-color menu_hover_border_dark    #171717;
+@define-color menu_hover_border_mid     #191919;
+@define-color menu_hover_border_light   #353535;
 
 /* other colors */
 @define-color selection_text        #ffffff;
