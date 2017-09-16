@@ -23,7 +23,7 @@ window headerbar {
  Buttons
 ******************************************************************************/
 
-button:not(:link) {
+button:not(:link):not(.flat) {
     padding: 4px;
     margin: 2px;
 
@@ -49,13 +49,13 @@ button:link > label {
     text-decoration: underline;
 }
 
-button:focus:not(:link) {
+button:focus:not(:checked):not(:link):not(.flat) {
     box-shadow: 0 0 2px     @deco_focus,
                 0 0 2px     @deco_focus,
                 0 0 1px 1px @deco_focus;
 }
 
-button:hover:not(:link) {
+button:hover:not(:checked):not(:link):not(.flat) {
     box-shadow: 0 0 2px     @deco_hover,
                 0 0 2px     @deco_hover,
                 0 0 1px 1px @deco_hover;
@@ -70,6 +70,28 @@ button:checked:not(:link) {
 
 button:disabled:not(:link) {
     color: alpha(@button_text, 0.5);
+}
+
+button.flat:not(:link) {
+    padding: 3px;
+    margin: 1px;
+
+    border: 1px solid;
+    border-color: transparent;
+    border-radius: 4px;
+}
+
+button.flat:checked:not(:link) {
+    border-color: @window_border_dark @window_border_mid @window_border_light;
+}
+
+button.flat:hover:not(:link) {
+    border-color: @deco_hover;
+}
+
+button.flat:active:hover:not(:link),
+button.flat:checked:hover:not(:link) {
+    box-shadow: inset 0 0 2px @deco_hover;
 }
 
 /******************************************************************************
@@ -197,6 +219,14 @@ menuitem:hover {
 /******************************************************************************
  States (keep at end of file!)
 ******************************************************************************/
+
+*:hover {
+    -gtk-icon-effect: highlight;
+}
+
+*:disabled {
+    -gtk-icon-effect: dim;
+}
 
 *:link {
     color: @link_normal;
