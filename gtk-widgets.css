@@ -25,6 +25,7 @@ window headerbar {
 
 button:not(:link) {
     padding: 4px;
+    margin: 2px;
 
     background-image: linear-gradient(@button_bg_light 0%,
                                       @button_bg_base 50%,
@@ -65,6 +66,10 @@ button:checked:not(:link) {
     border-color: @window_border_dark @window_border_mid @window_border_light;
     box-shadow: inset 0 1px 2px @deco_shadow;
     transition: box-shadow 0s;
+}
+
+button:disabled:not(:link) {
+    color: alpha(@button_text, 0.5);
 }
 
 /******************************************************************************
